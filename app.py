@@ -45,6 +45,9 @@ try:
 except LookupError:
     nltk.download('punkt', download_dir=NLTK_DATA_DIR)
     nltk.download('stopwords', download_dir=NLTK_DATA_DIR)
+import nltk
+nltk.download('punkt')  # no download_dir specified
+
 
 
 class GroqClient:
